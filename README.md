@@ -57,20 +57,6 @@ Some sketches reuse the same pins (for example GPIO 18 and 23 appear in both the
 4. For sketches that use Wi-Fi or Adafruit IO, fill in your own credentials (see below).
 5. Upload, then open the Serial Monitor at **115200 baud**.
 
-## Configuration
-
-Sketches that connect to Wi-Fi or Adafruit IO need placeholders replaced with your own values:
-
-```cpp
-#define WIFI_SSID     "YOUR_WIFI_NAME"
-#define WIFI_PASSWORD "YOUR_WIFI_PASSWORD"
-#define IO_USERNAME   "YOUR_ADAFRUIT_IO_USERNAME"
-#define IO_KEY        "YOUR_ADAFRUIT_IO_KEY"
-```
-
-Adafruit IO feeds used: `temperature`, `humidity`, `light`.
-
-> **Never commit real credentials.** Keep Wi-Fi passwords and API keys in a separate untracked header file (for example `secrets.h`, listed in `.gitignore`).
 
 ## Using the web dashboard
 
